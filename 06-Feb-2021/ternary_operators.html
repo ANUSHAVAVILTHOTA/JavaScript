@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<!-- 
+condition ? a : b
+
+true = a exp execute first part (before :)
+false =b exp  execute second part (after :)
+
+condition ?     :
+-->
+<script>
+	var a=10,b=5;
+   
+   //for any conditions  will have only 2 outputs either true or false
+     var x= a>b ? "a is greater xyz abc" :"a is not greater";
+	// 10>5    == "a is greater xyz abc"
+	var y= a<b ? "a is greater xyz abc" :"a is not greater";
+
+	//10<5   ==="a is not greater"
+	document.getElementById("p1").innerHTML=x;
+	document.getElementById("p2").innerHTML=y;
+</script>
+</body>
+</html>

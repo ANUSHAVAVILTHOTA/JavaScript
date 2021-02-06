@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <p id="t1"></p>
+    <p id="t2"></p>
+    <p id="t3"></p>
+    <p id="t4"></p>
+     <p id="t5"></p>
+     <p id="t6"></p>
+
+     <p id="s1" style="font-size: 30px;"></p>
+     <p id="s2"></p>
+     <p id="s3"></p>
+     <p id="s4">This is big size font</p>
+    <script type="text/javascript">
+    	var str="HIII GOODYES";
+
+
+    	// 0=H  1=I     2=I   3=I  4=space  5=G  6=O 7=O 8=D 9=Y 10=E 11=S
+    	document.getElementById("t1").innerHTML=str;
+    	document.getElementById("t2").innerHTML=str[0];//H
+    	document.getElementById("t3").innerHTML=str[1];//I
+    	document.getElementById("t4").innerHTML=str[2];//I
+    	document.getElementById("t5").innerHTML=str[5];//G
+    	document.getElementById("t6").innerHTML=str[7];//
+    	document.getElementById("t6").innerHTML=str[8];//D
+    	document.getElementById("t6").innerHTML=str[10];//E //Y
+
+         var s="This is \"Simple\" code";
+         var s1="This is \'Simple\' code";
+         var s2="This is \\Simple code";
+         document.getElementById("s1").innerHTML=s;
+         document.getElementById("s2").innerHTML=s1;
+         document.getElementById("s3").innerHTML=s2;
+
+         //using js
+         document.getElementById("s4").style.fontSize="39px";
+         //   This is "simple" code
+
+    </script>
+</body>
+</html>

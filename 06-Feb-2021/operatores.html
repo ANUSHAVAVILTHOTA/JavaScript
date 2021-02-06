@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<!-- =
++=
+-=
+*=
+/=
+%= -->
+
+
+<script>
+	
+ var x=5,y=10;
+ 
+ x=y;    //x=10;  //x=12  //x=7 //undefined  /x=3
+ document.getElementById("p1").innerHTML=x;//x=10
+ 
+ x+=6;  // x=10+6  =16   x=x+6  x+=6
+ document.getElementById("p2").innerHTML=x;//16
+
+
+ x-=6;  // x=16-6  =10   x=x-6 or x-=6
+ document.getElementById("p3").innerHTML=x; //10
+
+ x*=5;  // x=10*5=50
+ document.getElementById("p4").innerHTML=x; //50
+
+
+  x/=5;  // x=50/5  =10 reminder 0
+ document.getElementById("p5").innerHTML=x; //10
+
+   x%=4;  // x=50/4   
+
+ document.getElementById("p6").innerHTML=x; //2
+
+ y=x;   //y=5
+ document.getElementById("p7").innerHTML=y;
+
+</script>
+
+
+</body>
+</html>
