@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<!-- <style type="text/css">
+		body{
+			background-image: url('logo.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style> -->
+	<script src="main.js"></script>
+
+
+
+
+</head>
+<body>
+<h3>Js can chnage the html content</h3>
+
+<p id="kp">ABC</p>
+<button type="button" onclick='document.getElementById("kp").innerHTML="XYZ"'>Click Here!!!</button>
+
+<h3>Js can chnage the html content</h3>
+<h1 id="kp1">ABCD</h1>
+
+<button type="button" onclick='document.getElementById("kp1").innerHTML="Good Evng"'>ClickMe</button>
+
+Hide
+<h3 id="kp2">HIDE THIS</h3>
+<button type="button"  onclick='document.getElementById("kp2").style.display="none"'>Click ME</button>
+
+Change Styles
+<h3 id="kp3">Big Font Size</h3>
+<button type="button"  onclick='document.getElementById("kp3").style.fontSize="50px"'>Click ME</button>
+
+Display Content
+<h4 id="kp4" style="display: none" >Hello JS</h4>
+<button type="button" onclick='document.getElementById("kp4").style.display="block"'>Click me to Show</button>
+
+<h2>JS inside body Section</h2>
+<p id="d1"></p>
+
+<script>
+	document.getElementById("d1").innerHTML="Hello";
+</script>
+
+<h3>JS Inside Head</h3>
+<p id="d2">XYZ</p>
+<button type="button" onclick="MYFUN()">Click Here</button>
+
+
+</body>
+
+</html>
