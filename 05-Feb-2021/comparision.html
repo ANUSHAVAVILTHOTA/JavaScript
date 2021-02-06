@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	==
+	===
+	!=
+	>
+	<
+	>=
+	<=
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<script>
+	var a=5,b=10,c="5";
+	var x=a;  //x=5
+
+// a==c  5==5
+// true
+
+// int(5)===str(5)   it will check the type also
+// false  
+
+// a!=b   5!=10  5 not equal to 10
+// true
+
+// a>b   5>10  
+// false
+
+a<b   5<10
+true
+
+a>=c  5>=5
+true
+
+a<=b   5<=10
+true
+
+	document.getElementById("p1").innerHTML= a==c;
+	document.getElementById("p2").innerHTML= a===c;
+	document.getElementById("p3").innerHTML= a!=b;
+	document.getElementById("p4").innerHTML= a>b;
+	document.getElementById("p5").innerHTML= a<b;
+	document.getElementById("p6").innerHTML= a>=c;
+	document.getElementById("p7").innerHTML= a<=b;
+	
+
+</script>
+</body>
+</html>

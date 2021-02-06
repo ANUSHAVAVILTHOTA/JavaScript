@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+&& || !
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<script>
+	var a=5,b=10;
+
+	 // and &&
+	// true && true  ===true
+	//true && false ===false
+	//false && true ===fasle
+	//false && false ===false
+
+    //or ||
+	// true || true  ===true
+	//true || false ===true
+	//false || true ===true
+	//false || false ===false
+
+	//not !
+	//true ====false
+	//false====true
+
+
+    
+
+	true  5!=10 && 5<10   true && true===true
+
+	true   5!=10 || 5<10  true || true===true
+
+	false   !(5<10)  !(true)  ===false
+
+	document.getElementById("p1").innerHTML=(a!=b) && (a<b);
+	document.getElementById("p2").innerHTML=(a!=b) || (a<b);
+	document.getElementById("p3").innerHTML=!(a<b);
+</script>
+</body>
+</html>
