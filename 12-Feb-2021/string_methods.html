@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+  <p id="d"></p>
+  <p id="d1"></p>
+  <p id="d2"></p>
+  <p id="d3"></p>
+  <p id="d4"></p>
+<p id="d5"></p>
+<p id="d6"></p>
+<p id="d7"></p>
+<p id="d8"></p>
+<p id="d9"></p>
+<p id="d10"></p>
+<p id="d11"></p>
+<p id="d12"></p>
+
+<p id="s1"></p>
+<p id="s2"></p>
+
+<p id="s3"></p>
+<p id="s4"></p>
+
+<p id="s5"></p>
+<p id="s6"></p>
+  <script type="text/javascript">
+  	var abc="asjd apple sdc j duhsk apple awdsbx apple  ";
+ // variablename.length  counting chars in string
+  	var l=abc.length;
+  	document.getElementById("d").innerHTML=l;
+
+
+//length ===count of total chars
+//indexOF =====it will find first accurance of the word
+// 0=s
+// 1=a
+// 2=h
+// 3=b
+// 4=space
+// 5===apple accurs
+
+//first accurance
+  	var pos=abc.indexOf("apple");
+  	document.getElementById("d1").innerHTML=pos;
+
+// last accurance of the word in string
+  	var pos1=abc.lastIndexOf("apple");
+  	document.getElementById("d2").innerHTML=pos1;
+
+///word is no found in string then it will return -1
+  	var pos2=abc.lastIndexOf("anu");
+  	document.getElementById("d3").innerHTML=pos2;
+
+//0--
+//14  th location
+    var pos3=abc.indexOf("apple",9);
+    document.getElementById("d4").innerHTML=pos3;
+
+
+ //  20000 35000 
+
+ 	var pos4=abc.lastIndexOf("apple",12);
+  	document.getElementById("d5").innerHTML=pos4;
+
+
+//search
+   var str=abc.search("apple");
+   document.getElementById("d6").innerHTML=str;
+//slice
+
+
+//asjd apple sdc j duhsk apple awdsbx apple  
+// 0=a   
+// 1=s   2=j 3=d  4 space 5=a 6=p 7=p 8=l 9=e
+
+// d apple 
+// 3456789
+
+//we can extract words from sent
+var s1=abc.slice(3,10);
+document.getElementById("d7").innerHTML=s1;
+
+var h="Apple, Banana, kiwi";
+
+// 0=A 1=p 2=p 3=l 4=e 5=, 6=space 7=B 8=a
+
+// 9=n 10=a 11=n 12=a  13=, 14=space 15=K
+
+
+// 3,10    3,4,5----9
+
+//-12,-6  -12,-11,-10,-9,-8,-7
+
+//7        7,8,9,10----len
+
+//-12     -12,-11,-10 .....0
+
+//positive or negative always it will leave last value only
+var s2=h.slice(-12,-6);
+document.getElementById("d8").innerHTML=s2;
+
+var s3=h.slice(4);
+document.getElementById("d9").innerHTML=s3;
+
+var s4=h.slice(-15);
+document.getElementById("d10").innerHTML=s4;
+
+var s5=h.substring(3,10);
+document.getElementById("d11").innerHTML=s5;
+
+var s6=h.substr(3,10);
+document.getElementById("d12").innerHTML=s6;
+
+
+// indexOf()  // second param 
+// search()  //3 
+// lastIndex()  //searching from last
+// slice()    //extract the words
+// substring()
+// substr()
+
+
+var x="Anu";   //string
+var y=new String("Anu"); //object
+
+document.getElementById("s1").innerHTML=typeof(x);
+document.getElementById("s2").innerHTML=typeof(y);
+
+//x==y
+//Anu==Anu =True
+document.getElementById("s3").innerHTML=(x==y);
+
+//x===y
+//String===Object False
+document.getElementById("s4").innerHTML=(x===y);
+
+
+
+var a=new String("Anu"); //object  xyz
+var b=new String("Anu"); //object  lmn
+
+
+//Anu==Anu ==       True
+
+//Object ===Object  False
+
+//2 objects locations are different
+
+//never store 2 objects in same location
+
+document.getElementById("s5").innerHTML=(x==y);
+document.getElementById("s6").innerHTML=(x===y);
+</script>
+</body>
+</html>
