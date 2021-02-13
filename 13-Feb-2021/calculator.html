@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		input[type="button"]{
+			background-color: purple;
+			color: white;
+			border: 2px solid black ;
+			width: 100%;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function anusha(x){
+			document.getElementById("result").value+=x;
+		}
+		function solve(){
+			//  10517.333333333334+3
+			var a=document.getElementById("result").value;
+			var b=eval(a); ///eval function will take expressions like 2+3
+		    document.getElementById("result").value=b;
+		}
+		function abc(){
+			document.getElementById("result").value="";
+		}
+
+	</script>
+
+<!-- basic calsi   Ac X
+ 
+ advanced calsi (sin,cos,tan,sqrt,delete)-->
+
+
+
+<!--snake game -->
+<!--dice roll (chess board)-->
+<!--ludo game --->
+
+
+	<!-- 8:00 AM -->
+</head>
+<body>
+
+<h1>Calculator</h1>
+<table >
+	<tr>
+		<!-- 3 columns  567+30
+		1 column ===total =4 -->
+		<!-- p tag  innerhtml  input tags .value -->
+		<td colspan="3"><input type="text" id="result"></td>
+		<td><input type="button" value="C" onclick="abc()"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="1" onclick="anusha('1')"></td>
+		<td><input type="button" value="2" onclick="anusha('2')"></td>
+		<td><input type="button" value="3" onclick="anusha('3')"></td>
+		<td><input type="button" value="/" onclick="anusha('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="4" onclick="anusha('4')"></td>
+		<td><input type="button" value="5" onclick="anusha('5')"></td>
+		<td><input type="button" value="6" onclick="anusha('6')"></td>
+		<td><input type="button" value="-" onclick="anusha('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="7" onclick="anusha('7')"></td>
+		<td><input type="button" value="8" onclick="anusha('8')"></td>
+		<td><input type="button" value="9" onclick="anusha('9')"></td>
+		<td><input type="button" value="+" onclick="anusha('+')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="." onclick="anusha('.')"></td>
+		<td><input type="button" value="0" onclick="anusha('0')"></td>
+		<td><input type="button" value="=" onclick="solve()"></td>
+		<td><input type="button" value="*" onclick="anusha('*')"></td>
+	</tr>
+</table>
+</body>
+</html>
