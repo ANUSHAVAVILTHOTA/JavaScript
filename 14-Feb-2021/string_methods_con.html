@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Str Methods</title>
+</head>
+<body>
+
+<p id="a">Have a nice Day!</p>
+
+<p id="a1">Have a nice Day!</p>
+
+<button  onclick="myfun()">Click here</button>
+
+<script type="text/javascript">
+	//str=Have a nice Day!
+	var str=document.getElementById("a").innerHTML;
+
+	var t=str.replace("nice","abcd");
+	
+	document.getElementById("a").innerHTML=t;
+
+
+	function myfun(){
+
+		var str1=document.getElementById("a1").innerHTML;
+
+		var t1=str1.replace("Day!","Days!!!***@@");
+		
+		document.getElementById("a1").innerHTML=t1;
+
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concat</title>
+</head>
+<body>
+<p id="abc"></p>
+<p id="abc1"></p>
+<script type="text/javascript">
+	var t1="Hello sux sud cdsjk";
+	var t2="ABC World!!!";
+//Hello sux sud cdsjk ABC World!!!
+    var com_text=t1.concat("#&*",t2);
+    document.getElementById("abc").innerHTML=com_text;
+
+    //ABC World!!! Hello sux sud cdsjk
+    var com_text1=t2.concat(" ",t1);
+    document.getElementById("abc1").innerHTML=com_text1;
+</script>
+</body>
+</html>

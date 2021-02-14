@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STR METHODS</title>
+</head>
+<body>
+<p id="a">HAVE a Nice Day! abcd</p>
+<p id="b"></p>
+<button onclick="kp()">Click here to convert into Uppercase</button>
+<script type="text/javascript">
+
+
+       function kp(){
+		 //a=HAVE a Nice Day! abcd
+         var ab=document.getElementById("a").innerHTML;
+         //HAVE A NICE DAY! ABCD
+         document.getElementById("b").innerHTML=ab.toUpperCase();
+
+	  }
+	
+</script>
+</body>
+</html>

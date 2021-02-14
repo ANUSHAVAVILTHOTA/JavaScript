@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STR METHODS</title>
+</head>
+<body>
+<p id="a">HAVE a Nice Day!</p>
+
+<!-- string capital small
+
+uppercase ====capital letters
+HAVE A NICE DAY!
+lowercase =====small letters 
+have a nice day!
+-->
+<button onclick="upper()">Click me to convert into Lowercase</button>
+<script type="text/javascript">
+
+	function upper(){
+		//str=Have a nice Day!
+		var str=document.getElementById("a").innerHTML;
+
+		document.getElementById("a").innerHTML=str.toLowerCase();
+	}
+</script>
+</body>
+</html>
