@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Methods od string and Numbers</title>
+	<style type="text/css">
+		h1{
+			background-color: purple;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<p id="g1"></p>
+
+<p id="g2"></p>
+<script type="text/javascript">
+	var abc="XYZ";
+	//  0-C 1-o 2=d 3=i 4=n 5=g 6=space 7=H
+	//want to extract char i
+
+	///for char
+	// document.getElementById("g1").innerHTML=abc.charAt(7);
+	//ascii values
+// document.getElementById("g1").innerHTML=abc.charCodeAt(0);
+
+abc[0]="L";//wont accept wont give any error
+document.getElementById("g1").innerHTML=abc[0];
+
+	//ASCII Values
+	//char /num/spl symbol
+
+
+// A-Z  65-90    A=65 B=66 c=67 D=68 E=69 F=70 G=71 -------Z=90
+
+//a-z  97-122   a=97 b=98 c=99 --------------x=120 y= 121 z=122
+
+//A=65 B=66 c=67 D=68 E=69 F=70 G=71 H=72
+//0-9  
+
+//@ # % & * ( ) space ! ~   
+
+var dg="abcd efg+hij";  ///abcd efg hij
+//[abcd xyz]
+var anu=dg.split("+"); //[abcd efg  hij] =anu
+document.getElementById("g2").innerHTML=anu[1];
+
+
+</script>
+</body>
+</html>

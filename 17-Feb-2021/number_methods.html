@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers</title>
+</head>
+<body>
+<p id="a1"></p>
+<p id="a2"></p>
+
+<p id="a3"></p>
+<p id="a4"></p>
+<p id="a5"></p>
+<p id="a6"></p>
+<p id="a7"></p>
+<p id="a8"></p>
+<script type="text/javascript">
+	var x=3.67;
+	var y=3;
+
+
+//12300000000     123e8//large
+
+// 0.00000123      123e-8  small
+
+//0.0000123     123e-7
+
+	var a=123e8 //12300000000 
+	var b=123e-7  //0.0000123   0.0000123
+	document.getElementById("a1").innerHTML=a;
+	document.getElementById("a2").innerHTML=b;
+
+
+/// values will be accurate upto 15 digits
+	var m=999999999999999;
+	var n=9999999999999999;
+	document.getElementById("a3").innerHTML=m;
+	document.getElementById("a4").innerHTML=n;
+
+//floating point arithmetic + - * / will not be accurate
+	var g=0.2+0.1;
+	document.getElementById("a5").innerHTML=g;
+
+//multiply with 10  divide by 10
+	var h=(0.2*100+0.1*100)/100;
+	document.getElementById("a6").innerHTML=h;
+
+//numeric values it will convert automatically string values to int
+	var k="100"; //strings
+	var l="10";   
+
+	var u="10";  
+
+	var f=NaN
+    // document.write(k/l)
+    // document.write(k+l)
+    // document.write(k-l)
+    // document.write(k*l)
+    // document.write(k%l)
+
+// 100/Car ==NaN  Not a Number
+
+
+    // document.write(f+u)
+    // document.write(-2/0)
+    document.write(2/0)
+</script>
+</body>
+</html>
