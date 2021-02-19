@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays in js</title>
+</head>
+<body>
+
+<p id="a1"></p>
+<p id="a2"></p>
+<p id="a3"></p>
+<p id="a4"></p>
+<p id="a5"></p>
+<p id="a6"></p>
+<p id="a7"></p>
+<p id="a8"></p>
+<p id="a9"></p>
+<p id="b1"></p>
+<p id="b2"></p>
+<script type="text/javascript">
+	//multiple values in arrays
+	//creating arrays
+	var abc=["abc","xyz","lmn",12,34.55,"opq"];
+	document.getElementById("a1").innerHTML=abc;
+
+
+	var xyz=new Array("abc","xyz","lmn",12,34.55);
+	document.getElementById("a2").innerHTML=xyz;
+
+
+	//how to access
+
+
+    // abc=["abc","xyz","lmn",12,34.55]
+
+    // 0=abc   1=xyz   2=lmn 3=12  4= 34.55 5=opq
+
+
+//changing the elements inside the array
+	 var a=abc[4];
+     document.getElementById("a3").innerHTML=a;
+
+     var c=["abc","xyz","lmn","ijk"];   
+// 0=abc,   //abcde
+// 1=xyz,
+// 2=lmn,
+// 3=ijk   
+//apple
+    c[0]="abcde";
+    c[3]="apple";
+    document.getElementById("a4").innerHTML=c;
+
+//key value   
+
+//object key:value
+
+   var t={firstname:"Anusha",Lastname:"V",ID:"R14"};
+   
+   document.getElementById("a5").innerHTML=t["Lastname"];
+   document.getElementById("a6").innerHTML=t["ID"];
+   document.getElementById("a7").innerHTML=t["firstname"];
+
+
+   var h1=["abc","xyz","lmn","ijk","123",97,"abc","xyz","lmn","ijk","123",97,"abc","xyz","lmn","ijk","123",97,"abc","xyz","123","car"]; //6
+
+   //0=abc 1="xyz"  2="lmn" 3=ijk  21=car
+   //22 
+  
+
+   //indexing will be starts from 0
+   //counting means in the lengh it will starts from 1
+   document.getElementById("a8").innerHTML=h1.length;//count of the array
+
+   
+   document.getElementById("a9").innerHTML=h1[0];//accessing the first element
+   var p=h1.length;
+   //arrayname[0]   first
+   //arryname[length -1]   last
+   //arryname[indexvalue]
+   document.getElementById("b1").innerHTML=h1[p-1];//accessing the last element
+
+document.getElementById("b2").innerHTML=h1[5];
+   // 0=abc
+   // 1=xyz
+   // 2=lmn
+   // 3=ijk
+   // 4=123
+   // 5=97
+      
+
+      // 20=123
+   // 21=car
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding Element</title>
+</head>
+<body>
+
+<button onclick="myfun()">Click Here</button>
+
+<p id="d1"></p>
+
+
+<script type="text/javascript">
+	var fruits;
+	fruits=["apple","grape","orange"];
+	document.getElementById("d1").innerHTML=fruits;
+
+    function myfun(){
+    	// fruits.push("lemon");
+
+    	// 0=apple
+    	// 1=grape
+    	// 2=orange
+     //    fruits[3]="Mango"
+        
+    	fruits[fruits.length]="Mango";
+    	document.getElementById("d1").innerHTML=fruits;
+    }
+</script>
+</body>
+</html>
