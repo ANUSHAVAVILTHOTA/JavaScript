@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Ele</title>
+</head>
+<body>
+
+<p id="j1"></p>
+<p id="j2"></p>
+<p id="j3"></p>
+<p id="j4"></p>
+<p id="j5"></p>
+<p id="j6"></p>
+<p id="j7"></p>
+<script type="text/javascript">
+	var f=["ABC","xyz","gh","LMN"];
+
+	//0=ABC    1=xyz  2=gh  3=Lmn
+	delete f[0];
+    
+    delete f[2];
+	document.getElementById("j1").innerHTML=f;
+
+	var x=["Email","fname","lname"];
+	var y=["dob","age","gender"];
+
+document.getElementById("j2").innerHTML=x.concat(y);
+document.getElementById("j3").innerHTML=y.concat(x);
+
+// (index position where we want to add,number of elements which we want to delete,
+// 	elements names which we want to add)
+x.splice(3,0,"abc","xyz","def","bjk","lki");
+document.getElementById("j4").innerHTML=x;
+
+var x1=["Email","fname","lname","fname1","lname1"];
+x1.splice(3);
+document.getElementById("j5").innerHTML=x1;
+
+
+
+var x2=["Email","fname","lname","fname1","lname1"];
+
+x2.splice(1,3);
+document.getElementById("j6").innerHTML=x2;
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array-To Sting</title>
+</head>
+<body>
+<p id="f1"></p>
+<p id="f2"></p>
+<p id="f3"></p>
+<p id="f4"></p>
+<p id="f5"></p>
+<p id="f6"></p>
+<p id="f7"></p>
+<p id="f8"></p>
+<p id="f9"></p>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+
+<script type="text/javascript">
+	//abc array
+
+	var abc=["apple","grapes","oragne","Mango"];
+
+	//toString
+
+     document.getElementById("f1").innerHTML=abc;//object
+
+     document.getElementById("f2").innerHTML=abc.toString();//array into string
+
+     document.getElementById("f3").innerHTML=typeof abc;
+
+     document.getElementById("f4").innerHTML=typeof abc.toString();
+
+
+     //join     apple@grapes@oragne@Mango  apple#grapes#oragne#Mango
+
+
+//apple grapes orange Mango
+
+     document.getElementById("f5").innerHTML=abc.join(" priyanshi ");
+      
+//abc=["apple","grapes","oragne","Mango"]
+
+    //to remove last element inside the array
+    document.getElementById("f6").innerHTML=abc;//array  ["apple","grapes","oragne","Mango"]
+    document.getElementById("f7").innerHTML=abc.pop();//removed last element   Mango
+    document.getElementById("f8").innerHTML=abc;//remaining array  ["apple","grapes","oragne"]
+
+
+    //pop()  to remove last element
+    //push()  to add element in the last
+
+
+    //shift   to remove first element
+    //unshift to add first element
+
+var xyz=["ABC","xyz","gh","LMN"];
+//using shift function we can delete first element from the array
+//  ABC   
+//["xyz","gh","LMN"]
+document.getElementById("d1").innerHTML=xyz.shift();
+
+document.getElementById("d2").innerHTML=xyz;
+
+
+//unshift function to add element in the starting position
+
+
+
+var tr=["ABC","xyz","gh","LMN"];
+
+//"JKL"
+
+document.getElementById("d3").innerHTML=tr.unshift("JKL"); ///count of new array  that is 5
+
+document.getElementById("d4").innerHTML=tr;  //["JKL","ABC","xyz","gh","LMN"]
+
+</script>
+	</body>
+</html>
