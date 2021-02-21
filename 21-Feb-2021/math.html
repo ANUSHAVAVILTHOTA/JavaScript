@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Functions</title>
+</head>
+<body>
+
+<p id="t1"></p>
+<p id="t2"></p>
+<p id="t3"></p>
+
+<p id="t4"></p>
+<p id="t5"></p>
+<p id="t6"></p>
+
+
+<p id="t7"></p>
+<p id="t8"></p>
+
+
+<p id="f1"></p>
+<p id="f2"></p>
+
+<p id="f3"></p>
+
+<p id="f4"></p>
+<p id="f5"></p>
+
+<p id="f6"></p>
+<p id="f7"></p>
+<p id="f8"></p>
+<p id="f9"></p>
+<p id="g1"></p>
+<p id="g2"></p>
+<p id="g3"></p>
+<p id="g4"></p>
+<p id="g5"></p>
+<p id="g6"></p>
+<p id="g7"></p>
+<p id="g8"></p>
+<p id="g9"></p>
+
+
+<!-- PI=3.14.... -->
+<script type="text/javascript">
+	document.getElementById("t1").innerHTML=Math.PI;
+
+//   after decimal if it is above 5
+
+
+// 4 power 2
+
+
+
+// after decimal  
+
+// 1)greater than 5   it will take the next value
+// 2)less than 5       it will take the value before the demimal
+
+// 4  less than 5    
+
+// 6   greater than 5
+    document.getElementById("t2").innerHTML=Math.round(8.4);//7
+    document.getElementById("t3").innerHTML=Math.round(4.6);//9
+
+    // 7.4
+
+    // 4   less than 5  =-======7
+
+    // 8.6
+
+    // 6   greater than  5=======8+1==9
+
+
+// 8.4
+
+
+// 4   less than 5   =====8
+
+
+
+// 4.6
+
+// 6   greater than 5====4+1===5
+
+
+// 3 power 3
+
+// 3*3*3
+
+
+// 4 power 5
+
+// 4*4*4*4*4
+
+// 5 power 3
+
+// 5*5*5
+
+// 256 power 5
+
+// 256*256*256*256*256
+
+document.getElementById("t4").innerHTML=Math.pow(16,2);
+
+
+
+ // 27,6
+
+ // 27* 2* 27* 27* 27*27
+
+// a power b
+
+
+// 23 power 5
+// 23*23*23*23*23
+
+// 255 power 4
+
+// 255*255*255*255  =  4228250625
+
+
+// 8 power 4
+// 8*8*8*8         =   4096
+
+
+// 9 power 3
+
+// 9*9*9              ====729
+
+
+// 4 power 6
+
+// 4*4*4*4*4*4   =4096
+ 
+
+// 64==8
+
+// 16  ==4
+
+//81 ==9
+
+
+
+document.getElementById("t5").innerHTML=Math.sqrt(256);
+
+
+// |x|=x
+
+// |-x|=x
+
+//returns always positive value
+document.getElementById("t6").innerHTML=Math.abs(-64.4);
+
+
+document.getElementById("t7").innerHTML=Math.ceil(6.4);
+
+
+// before decimal value +1    ==ceil      6+1==7
+// before decimal value        ===floor    ===4
+document.getElementById("t8").innerHTML=Math.floor(4.7);
+
+
+
+
+///radians
+document.getElementById("f1").innerHTML=Math.sin(90);//radians
+
+//convert radians into degrees    45*PI/180====
+
+//90*PI/180  sin 90
+
+//0*PI/180   sin 0
+
+// 30*PI/180   sin 30
+
+// 45*PI/180   sin 45
+       
+//  120*PI/180  sin  120
+
+
+document.getElementById("f2").innerHTML=Math.sin(0*Math.PI/180);
+
+
+// 6.123233995736766e-17
+
+// 0.0612
+
+document.getElementById("f3").innerHTML=Math.cos(60*Math.PI/180);
+
+
+document.getElementById("f4").innerHTML=Math.min(9,234,30,25,67,78);
+
+document.getElementById("f5").innerHTML=Math.max(9,234,378,25,67,78);
+
+//random values from 0 to 1
+//Like 0.123 0.456 0.7 0.8
+document.getElementById("f6").innerHTML=Math.random();
+
+
+
+// Math.E        // returns Euler's number
+// Math.PI       // returns PI
+// Math.SQRT2    // returns the square root of 2
+// Math.SQRT1_2  // returns the square root of 1/2
+// Math.LN2      // returns the natural logarithm of 2
+// Math.LN10     // returns the natural logarithm of 10
+// Math.LOG2E    // returns base 2 logarithm of E
+// Math.LOG10E   // returns base 10 logarithm of E
+
+
+document.getElementById("g1").innerHTML=Math.E;
+document.getElementById("g2").innerHTML=Math.PI;
+document.getElementById("g3").innerHTML=Math.SQRT2;
+document.getElementById("g4").innerHTML=Math.SQRT1_2;
+document.getElementById("g5").innerHTML=Math.LN2;
+document.getElementById("g6").innerHTML=Math.LN10;
+document.getElementById("g7").innerHTML=Math.LOG2E;
+document.getElementById("g8").innerHTML=Math.LOG10E;
+
+
+</script>
+
+</body>
+</html>
