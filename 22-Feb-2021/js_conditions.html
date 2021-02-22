@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="s1"></p>
+<p id="s2"></p>
+<p id="s3"></p>
+<p id="s4"></p>
+<script type="text/javascript">
+	
+	// if else elseif
+
+	// if(condition){
+	// 	//execute this block
+	// }
+
+	var f=75;
+
+	//>70  it is greater than 70   false
+
+	//f>200   yes it is greater   false
+
+	if(f>70)
+	{
+	    //true
+		document.getElementById("s1").innerHTML="yes f is greater";
+	}
+
+	var x=350;
+	// x greater than 300 or not  if it is greater then print "yes it is true"
+// 200>300 //false
+
+//>200  =="yes it is greater than 200" >300 ="yes it is greater than 300" 
+
+//>400   ="yes it is greater than 400"
+
+     if(x>200){
+     	//true it will execute if block
+     	// x=x+200;
+     	document.getElementById("s2").innerHTML="yes it is greater than 200";
+     }
+     else if(x>300){
+     	document.getElementById("s2").innerHTML="yes it is greater than 300";
+     }
+     else if(x>400){
+     		document.getElementById("s2").innerHTML="yes it is greater than 400";
+     }
+     else{
+
+     	//false it will execute else block
+     	x=x+100;   //x=200+100=300
+     	document.getElementById("s2").innerHTML=x;   //==300
+     }
+
+
+
+
+
+//one else
+
+//many else if 
+//if any one condition is true then it will stop the remaining part
+
+//if the condition is false then it will go to the next condition
+
+// example
+
+//take the a as 50
+//b=30
+//c=65  
+//find out greatest of 3 numbers
+
+var a=50;  
+var b=130;  
+var c=65;   
+
+if(a>b && a>c){
+	document.getElementById("s3").innerHTML=a;
+}
+else if(b>a && b>c){
+	document.getElementById("s3").innerHTML=b;
+}
+else{
+	document.getElementById("s3").innerHTML=c;
+}
+
+//smallest of three numbers using conditions
+var x=35;
+var y=87;
+var z=90;
+
+if(a<b && a<c){
+	document.getElementById("s4").innerHTML=x;
+}
+else if(b<a && b<c){
+	document.getElementById("s4").innerHTML=y;
+}
+else{
+	document.getElementById("s4").innerHTML=z;
+}
+
+//nested if A>30 
+          //if >45
+if(a>30){
+	   if(a>45){
+	     document.getElementById("s4").innerHTML=" a is greater than both 30 and 45";
+	   }
+	   else{
+	   	document.getElementById("s4").innerHTML=" a is greater than only 30";
+	   }
+
+}
+else{
+   document.getElementById("s4").innerHTML=" a is lessthan 30";
+}
+
+//
+</script>
+</body>
+</html>
