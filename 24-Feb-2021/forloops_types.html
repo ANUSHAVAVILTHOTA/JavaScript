@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+<p id="d5"></p>
+
+<p id="d6"></p>
+<p id="d7"></p>
+<p id="d8"></p>
+<p id="d9"></p>
+<p id="r1"></p>
+<script type="text/javascript">
+	//1 2,3,4,5,6,7,8,9,10
+   for(k=1;k<=10;k=k+1){
+   	document.getElementById("d1").innerHTML+=k;
+   }
+
+   // 2nd way
+   var k=1;
+   for(;k<=10;k=k+1){
+   	document.getElementById("d2").innerHTML+=k;
+   }
+
+   //3rd way
+
+   var k=1;
+   for(;k<=10;){
+   	document.getElementById("d3").innerHTML+=k;
+   	k=k+1
+   }
+
+//  1 st con
+// 3 rd condition
+//1 and 3 rd conditions
+   var x=["ABC","OPQ","LMN","GST","AGE"];
+
+// x[0]=ABC
+// x[1]=OPQ
+// x[2]=LMN
+// x[3]=GST
+// x[4]=AGE
+
+   for(i=0;i<x.length;i=i+2){
+       document.getElementById("d4").innerHTML+=x[i]+"<br>";
+   }
+
+
+
+   //while loops
+
+    
+
+   var k=1;
+   while(k<=10){
+	   	document.getElementById("d5").innerHTML+=k;
+	   	k=k+1
+   }
+
+
+//34 36 38 40 44
+
+var k=34;
+   while(k<=44){
+	   	document.getElementById("d6").innerHTML+=k;
+	   	k=k+2
+   }
+
+
+//sum the values 1 to 10
+
+
+var sum=1;
+var m=1;
+while(m<=10){
+	sum=sum*m;
+	m=m+1;
+}
+document.getElementById("d7").innerHTML=sum;
+
+
+var arr=[24,7,9,78,54,35,67,18];
+//>=18
+ //arr[0]
+//24 78 54 35 67 18
+// i<8
+for(i=0;i<arr.length;i=i+1){
+	if(arr[i]>=18){
+		document.getElementById("d8").innerHTML+=arr[i]+"<br>";
+	}
+}
+
+//
+var f=[23,56,67,89,12,3,10]
+
+
+// f[0]=23
+// f[1]=56
+// f[2]=67
+// f[3]=89
+// f[4]=12
+// f[5]=3
+// f[6]=10
+//<=7
+// 
+for(i=0;i<f.length;i=i+1){
+	if(f[i]<=7){
+		document.getElementById("d9").innerHTML+=f[i]+"<br>";
+	}
+
+}
+
+//   var t1=[34,56,78,98,90,12,35,57,76,45]
+//>10 and also <50
+
+//28   >10  <50   it c
+//98   >10  <50   it wont
+
+
+var d=["a","lmn","opq","ijk"];
+var i;
+for(i in d){
+	document.getElementById("r1").innerHTML+=d[i]+"<br>";
+	
+}
+</script>
+</body>
+</html>
