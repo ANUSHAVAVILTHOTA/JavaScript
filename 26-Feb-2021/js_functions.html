@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+	<p id="r1"></p>
+	<p id="r2"></p>
+	<p id="r3"></p>
+	<p id="r4"></p>
+	<p id="r5"></p>
+<script type="text/javascript">
+	
+
+//6,7,8
+	var y= calculate(6,7,8);//calling
+  
+    document.getElementById("r1").innerHTML=y;
+
+	function calculate(x,y,z){
+		a=x+y+z;
+		return a;
+	}
+
+
+// 8,9,10,23,67   8+9+10+23+67  
+
+//same code for multiple items
+
+var t=addition(8,9,10,23,67);//calling
+
+document.getElementById("r2").innerHTML=t;
+
+function addition(a,b,c,d,e){
+
+	g=a+b+c+d+e;
+	return g;
+}
+
+// 1 to 20
+//1 to 30
+//1 to 50
+//60 to 80
+
+//20 to 30
+var a=6;
+var b=76;
+  valuesbtn(a,b);//calling
+
+
+  function valuesbtn(i,j){
+
+  	for(k=i;k<=j;k=k+1){
+  		document.getElementById("r3").innerHTML+=k+"<br>";
+  	}
+
+  }
+
+
+
+//6,89,67,63,45,23
+//89 67,63
+//>=50 or not
+
+//if it is greater then the result is "yes it is greater  han 50 "
+
+// yes it is greater  han 50 
+check(6,89,67,63,45,23);//calling
+
+function check(a,b,c,d,e,f){
+	if(a>=50){
+		document.getElementById("r4").innerHTML+=a;
+	}
+	if(b>=50){
+		document.getElementById("r4").innerHTML+=b;
+	}
+	if(c>=50){
+		document.getElementById("r4").innerHTML+=c;
+	}
+	if(d>=50){
+		document.getElementById("r4").innerHTML+=d;
+	}
+	if(e>=50){
+		document.getElementById("r4").innerHTML+=e;
+	}
+	if(f>=50){
+		document.getElementById("r4").innerHTML+=f;
+	}
+}
+
+
+//  arr=["abc","xyz","lmn"."pqr"]
+
+//arr_print()
+//
+
+</script>
+</body>
+</html>
